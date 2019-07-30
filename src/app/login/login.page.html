@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login With Your Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)] = "email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input [(ngModel)] = "password"></ion-input>
+    </ion-item>
+    
+    <ion-button [routerLink]="'/categories'" (click) ="logIn()"> Login</ion-button>
+
+    <p><a [routerLink]="'/register'">Register </a></p>
+</ion-content>

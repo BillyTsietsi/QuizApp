@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>categories</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<br>
+<br>
+
+<ion-item *ngFor = "let list of Cat ">
+  <ion-button [routerLink]="['/question']"  (click) ="setID(list.Cat_id)" >{{list.Cat_name}}</ion-button>
+  
+  
+</ion-item>
+
+
+</ion-content>
